@@ -1,3 +1,5 @@
+Dotfiles for my thinkpad x220.
+
 ## Deps
 * [compton](https://github.com/chjj/compton)
 * [termite](https://github.com/thestinger/termite)
