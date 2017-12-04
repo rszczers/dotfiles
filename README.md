@@ -12,7 +12,7 @@ Dotfiles for my Thinkpad x220.
 * [greybird theme](https://github.com/shimmerproject/Greybird)
 ### Fonts
 * Inconsolata
-* [siji](https://github.com/fauno/siji)
+* [siji](https://github.com/fauno/siji)(fork)
 * unifont
 * Roboto
 ## Cool utils
