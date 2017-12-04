@@ -133,3 +133,5 @@ export PATH=$PATH:$HOME/.local/bin
 export TERM=xterm-color
 
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+export VISUAL=vim
+export EDITOR="$VISUAL"
