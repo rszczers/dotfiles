@@ -20,6 +20,7 @@ Dotfiles for my Thinkpad x220.
 * [trans](https://github.com/soimort/translate-shell)
 * [tldr](https://github.com/raylee/tldr)
 * [ranger](https://github.com/ranger/ranger)
+* [qutebrowser](https://github.com/qutebrowser/qutebrowser)
 
 ## Preview
 ![dotfiles preview](https://github.com/rszczers/dotfiles/raw/master/tmp/scrot.png)
