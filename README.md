@@ -1,4 +1,4 @@
-Dotfiles for my thinkpad x220.
+Dotfiles for my Thinkpad x220.
 
 ## Deps
 * [compton](https://github.com/chjj/compton)
