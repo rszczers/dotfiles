@@ -1,0 +1,76 @@
+!!*foreground: #00cc00
+!!*foreground_bold: #a8a19f
+!!*cursor: #a8a19f
+!!*background:       #1b1918
+!!*background: rgba(0, 0, 0, .7)
+
+#define nord0 #2E3440
+#define nord1 #3B4252
+#define nord2 #434C5E
+#define nord3 #4C566A
+#define nord4 #D8DEE9
+#define nord5 #E5E9F0
+#define nord6 #ECEFF4
+#define nord7 #8FBCBB
+#define nord8 #88C0D0
+#define nord9 #81A1C1
+#define nord10 #5E81AC
+#define nord11 #BF616A
+#define nord12 #D08770
+#define nord13 #EBCB8B
+#define nord14 #A3BE8C
+#define nord15 #B48EAD
+
+*.foreground:   nord4
+*.background:   nord0
+*.cursorColor:  nord4
+*fading: 35
+*fadeColor: nord3
+
+*.color0: nord1
+*.color1: nord11
+*.color2: nord14
+*.color3: nord13
+*.color4: nord9
+*.color5: nord15
+*.color6: nord8
+*.color7: nord5
+*.color8: nord3
+*.color9: nord11
+*.color10: nord14
+*.color11: nord13
+*.color12: nord9
+*.color13: nord15
+*.color14: nord7
+*.color15: nord6
+
+XTerm*termName: xterm-256color
+XTerm*utf8: 1
+XTerm*metaSendsEscape: true
+XTerm*foreground: White
+XTerm*background: Gray10
+XTerm*geometry: 120x38
+XTerm*saveLines: 1000
+XTerm*faceName: Menlo
+XTerm*faceNameDoublesize: Osaka
+XTerm*faceSize: 11
+XTerm*cjkWidth: true
+
+Xft.antialias:  1
+Xft.autohint:   0
+Xft.dpi:        96
+Xft.hinting:    0
+Xft.hintstyle:  hintnone
+Xft.lcdfilter:  lcddefault
+Xft.rgba:       rgb
+
+! ------------------------------------------------------------------------------
+! ROFI Color theme (bg, fg, bg-alt, hl-bg, hl-fg)
+! ------------------------------------------------------------------------------
+rofi.font:                           Inconsolata 13
+rofi.color-enabled:                  true
+rofi.color-normal:                   #2E3440,#D8DEE9,#3B4252,#D8DEE9,#4C566A
+rofi.color-urgent:                   #2E3440,#D8DEE9,#3B4252,#D8DEE9,#4C566A
+rofi.color-active:                   #2E3440,#D8DEE9,#3B4252,#D8DEE9,#4C566A
+rofi.color-window:                   #2E3440,#D8DEE9
+rofi.separator-style:                none
