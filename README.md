@@ -8,6 +8,7 @@ Dotfiles for my Thinkpad x220.
 * [i3lock-blur](https://github.com/karulont/i3lock-blur)
 * [nitrogen](https://github.com/l3ib/nitrogen)
 * [xautolock](https://github.com/l0b0/xautolock)
+* [greybird theme](https://github.com/shimmerproject/Greybird)
 ### Fonts
 * Inconsolata
 * [siji](https://github.com/fauno/siji)
