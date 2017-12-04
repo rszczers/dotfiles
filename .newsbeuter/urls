@@ -1,19 +1,5 @@
 https://news.ycombinator.com/rss
-https://xkcd.com/rss.xml
-http://www.echodnia.eu/swietokrzyskie/rss/echodniaswietokrzyskie.xml
-http://boli.blog.pl/feed/
-https://www.reddit.com/.rss?feed=b26787c0a683c346765082154e8a7ba38bdf3b7b&user=fulgjon
-https://www.wykop.pl/tag/matematyka/rss "~Wypok.pl - #matematyka"
-https://www.wykop.pl/tag/linux/rss "~Wypok.pl - #linux"
-https://www.wykop.pl/tag/vim/rss "~Wypok.pl - #vim"
-https://www.wykop.pl/tag/lisp/rss "~Wypok.pl - #lisp"
-https://www.wykop.pl/tag/dungeonsanddragons/rss "~Wypok.pl - #d&d"
-https://www.wykop.pl/tag/thinkpad/rss "~Wypok.pl - #thinkpad"
-https://www.wykop.pl/tag/haskell/rss "~Wypok.pl - #haskell"
-https://www.wykop.pl/tag/programowaniefunkcyjne/rss "~Wypok.pl - #programowaniefunkcyjne"
-https://www.wykop.pl/tag/unknownews "~Wypok.pl - #unknownews"
-https://myfarog.org/feed/ "~myfarog blog"
-http://jasonhunt.pl/feed/
+
 http://feeds.feedburner.com/niebezpiecznik?format=xml {~Niebiezpiecznik}
 https://sekurak.pl/feed/ {~Sekurak}
 https://n-o-d-e.net/rss/rss.xml
