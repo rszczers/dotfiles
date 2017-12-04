@@ -4,6 +4,10 @@
 * [twmn](https://github.com/sboli/twmn)
 * [i3lock-blur](https://github.com/karulont/i3lock-blur)
 * [nitrogen](https://github.com/l3ib/nitrogen)
+### Fonts
+* Inconsolata
+* [siji](https://github.com/fauno/siji)
+* unifont
 
 ## Preview
 
