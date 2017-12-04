@@ -19,6 +19,7 @@ Dotfiles for my Thinkpad x220.
 * [hstr](https://github.com/dvorka/hstr)
 * [trans](https://github.com/soimort/translate-shell)
 * [tldr](https://github.com/raylee/tldr)
+* [ranger](https://github.com/ranger/ranger)
 
 ## Preview
 ![dotfiles preview](https://github.com/rszczers/dotfiles/raw/master/tmp/scrot.png)
