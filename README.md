@@ -12,6 +12,7 @@ Dotfiles for my Thinkpad x220.
 * Inconsolata
 * [siji](https://github.com/fauno/siji)
 * unifont
+* Roboto
 
 ## Preview
 
