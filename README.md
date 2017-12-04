@@ -15,6 +15,10 @@ Dotfiles for my Thinkpad x220.
 * unifont
 * Roboto
 
-## Preview
+## Cool utils
+* [hstr](https://github.com/dvorka/hstr)
+* [trans](https://github.com/soimort/translate-shell)
+* [tldr](https://github.com/raylee/tldr)
 
+## Preview
 ![dotfiles preview](https://github.com/rszczers/dotfiles/raw/master/tmp/scrot.png)
