@@ -1,0 +1,50 @@
+mkdir utwory
+rename FAH
+;
+mkdir Dungeon Synth
+mkdir Earl Mountain
+mkdir chuj
+rename 2018 - Hvaða Galdur Lá þarna
+bulkrename
+mkdir Kriegsmaschine
+mkdir Licho
+mkdir Robert Rich
+shell s
+rename Configurations
+bulkrename 
+mkdir rzeczy
+mkdir amiga
+mkdir koty
+mkdir kielce
+mkdir edysia
+mkdir domowe
+open_with chromium,
+run_with chromium
+open_with chromium
+search torrent
+rename 
+shel
+search doc
+open_withq
+delete grafx2-2.5.1960-src.tgz
+open_with gimp
+open_with mplayer
+mpv
+open_with mpv
+open_with q
+shell
+shell 
+mkdir .mail
+rename addon
+rename 1-s2.0-S0019995882904582-main.pdf
+open_with
+open_with 
+search stack
+search m
+open_with krita
+
+search .dot
+search 
+search .dotf
+delete
+search .vim
