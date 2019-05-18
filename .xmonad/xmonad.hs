@@ -25,7 +25,7 @@ import XMonad.StackSet as W
 import System.IO (hPutStrLn)
 --------------------------------------------------------------------------------
 
-myTerminal = "termite"
+myTerminal = "st"
 
 main = do
   -- spawn "/home/fulgjon/.cabal/bin/xmobar" -- Start a task bar such as xmobar.
@@ -41,7 +41,7 @@ main = do
                <+> manageHook desktopConfig
                <+> namedScratchpadManageHook scratchpads
     , layoutHook = desktopLayoutModifiers $ myLayouts
-    , terminal   = "termite"
+    , terminal   = myTerminal
     , logHook    = dynamicLogWithPP xmobarPP
         { ppOutput = hPutStrLn xmproc
         }
@@ -69,9 +69,9 @@ myKeys =
 
 spawnTermApp :: String -> String -> String
 spawnTermApp path className' = myTerminal
+  ++ " -c " ++ className'
+  ++ " -n " ++ className'
   ++ " -e " ++ path
-  ++ " -t " ++ className'
-  ++ " --name " ++ className'
 
 newScratchpad :: String -> String -> NamedScratchpad
 newScratchpad path className' =
