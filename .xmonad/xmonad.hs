@@ -23,6 +23,7 @@ import XMonad.Util.EZConfig
 import XMonad.Util.Run (spawnPipe)
 import XMonad.StackSet as W
 import System.IO (hPutStrLn)
+import XMonad.Prompt.Pass
 --------------------------------------------------------------------------------
 
 myTerminal = "st"
@@ -53,6 +54,7 @@ myKeys' =
   [ ("M-S-q", confirmPrompt myXPConfig "exit" (io exitSuccess))
   , ("M-d"  , shellPrompt myXPConfig)
   , ("M-S-f", sendMessage (Toggle "Full"))
+  , ("M-m", namedScratchpadAction scratchpads "poczta")
   , ("M-n", namedScratchpadAction scratchpads "odsluch")
   , ("M-S-g", namedScratchpadAction scratchpads "newsy")
   , ("M-S-b", namedScratchpadAction scratchpads "kalendarz")
@@ -61,7 +63,9 @@ myKeys' =
 
 myKeys :: [((KeyMask, KeySym), X ())]
 myKeys =
-  [ ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock")
+  [ ((mod4Mask, xK_p)                              , passPrompt myXPConfig)
+  , ((mod4Mask .|. controlMask, xK_p)               , passGeneratePrompt myXPConfig)
+  , ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock")
   , ((0, 0x1008FF11), spawn "amixer -q sset Master 2%-")
   , ((0, 0x1008FF13), spawn "amixer -q sset Master 2%+")
   , ((0, 0x1008FF12), spawn "amixer set Master toggle")
@@ -90,6 +94,7 @@ scratchpads :: [NamedScratchpad]
 scratchpads =
   [ newScratchpad "ncmpcpp"     "odsluch"
   , newScratchpad "newsbeuter"  "newsy"
+  , newScratchpad "neomutt"     "poczta"
   , newScratchpad "calcurse"    "kalendarz"
   , newScratchpad "ranger"      "manager-plikow"
   ]
@@ -123,10 +128,11 @@ myXPConfig = def
 -- Use the `xprop' tool to get the info you need for these matches.
 -- For className, use the second value that xprop gives you.
 myManageHook = composeOne
-  [ className =? "Pidgin" -?> doFloat
-  , className =? "XCalc"  -?> doFloat
-  , className =? "mpv"    -?> doFloat
-  , isDialog              -?> doCenterFloat
+  [ className =? "Pidgin"  -?> doFloat
+  , className =? "XCalc"   -?> doFloat
+  , className =? "mpv"     -?> doFloat
+  , className =? "mplayer" -?> doFloat
+  , isDialog               -?> doCenterFloat
 
     -- Move transient windows to their parent:
   , transience
