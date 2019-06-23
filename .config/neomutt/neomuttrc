@@ -1,0 +1,82 @@
+set realname  = "Rafał Szczerski"
+set from      = "rafal@szczerski.pl"
+
+set folder    = "~/.mail/szczerski"
+
+set mbox_type = Maildir
+set mbox      = +mbox
+set spoolfile = +inbox
+set record    = +sent
+set postponed = +drafts
+mailboxes +inbox
+
+
+#set pop_user  = "rafal@szczerski.pl"
+#set pop_host  = "s99.linuxpl.com:995"
+#set pop_pass  = "`pass mail/szczerski`"
+
+set editor           = vim
+
+set sort             = threads
+
+# Cryptography
+set pgp_sign_as       = B69590A9F697DD45357C48F37251CE8933A3650F
+set pgp_use_gpg_agent = yes
+set crypt_autosign    = yes
+set crypt_verify_sig  = yes
+set crypt_replysign   = yes
+set crypt_use_gpgme   = yes
+set crypt_replysignencrypted = yes
+
+# Preview
+auto_view text/html
+
+# Sending
+set sendmail      = "/usr/bin/msmtp"
+set envelope_from = yes
+set edit_hdrs
+set send_charset  = "utf-8"
+
+## Key bindings
+bind attach,browser,index g    noop
+bind attach,browser,index gg   first-entry
+bind attach,browser,index G    last-entry
+bind pager                g    noop
+bind pager                gg   top
+bind pager                G    bottom
+bind pager                k    previous-line
+bind pager                j    next-line
+bind attach,index,pager   \CD  next-page
+bind attach,index,pager   \CU  previous-page
+bind pager,index          d    noop
+bind pager,index          dd   delete-message
+bind browser,pager,index  N    search-opposite
+bind pager,index          r    noop
+bind pager,index          rr   reply
+bind pager,index          rg   group-reply
+bind index                za   collapse-thread
+bind index                zA   collapse-all
+### Index
+bind index                e    mail
+bind index                du   undelete-message
+bind index                m    save-message
+bind index                \t   next-unread
+bind index                dT   delete-thread
+bind index                dt   delete-subthread
+bind index                gt   next-thread
+bind index                gT   previous-thread
+### Sidebar
+bind index,pager          \Cp  sidebar-prev
+bind index,pager          \Cn  sidebar-next
+bind index,pager          \Co  sidebar-open
+bind index,pager          <F5> sidebar-prev-new
+bind index,pager          <F6> sidebar-next-new
+
+source dracula.muttrc
+
+bind index,pager B sidebar-toggle-visible
+set sidebar_width = 10
+
+set mailcap_path 	= ~/.mutt/mailcap
+auto_view text/html
+alternative_order text/enriched text/plain text/html text
