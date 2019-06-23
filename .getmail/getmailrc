@@ -1,0 +1,13 @@
+[retriever]
+type = SimplePOP3SSLRetriever
+server = s99.linuxpl.com
+username = rafal@szczerski.pl
+port = 995
+password_command = ("/usr/bin/pass","mail/szczerski")
+
+[destination]
+type = Maildir
+path = ~/.mail/szczerski/inbox/
+
+[options]
+delete = True
